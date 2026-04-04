@@ -1,7 +1,7 @@
 //Bai 2
 let powerUp = "mushroom";
 let effect = '';
-if  (powerUp === "mushroom") {
+if (powerUp === "mushroom") {
     effect = "Mario becomes Super!";
 } else if (powerUp === "flower") {
     effect = "Mario can shoot fireballs!";
@@ -12,4 +12,12 @@ if  (powerUp === "mushroom") {
 } else {
     effect = "Unknown power-up";
 }
+console.log(effect);
+
+//Cach 2:
+effect = (powerUp === "mushroom") ? "Mario becomes Super!" :
+    (powerUp === "flower") ? "Mario can shoot fireballs!" :
+        (powerUp === "star") ? "Mario is Invincible!" :
+            (powerUp === "none") ? "Mario is normal" :
+                "Unknown power-up";
 console.log(effect);
